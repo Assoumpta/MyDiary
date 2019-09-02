@@ -5,8 +5,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    
-    
+      
 }
 
 /*Navigation bar*/
@@ -15,9 +14,7 @@ body{
     height:90px;;
     width:90px;
     justify-content: flex-start;
-    margin-right: auto;
-
-    
+    margin-right: auto; 
 }
 
 nav ul{
