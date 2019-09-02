@@ -37,7 +37,7 @@ nav li{
 nav li a{
     display:flex;
     justify-content: right;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     
     color:black;
