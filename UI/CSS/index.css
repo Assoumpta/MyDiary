@@ -16,6 +16,7 @@ body{
     width:10%;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-right: auto;
     
 }
 
@@ -36,7 +37,7 @@ nav li{
 nav li a{
     display:flex;
     justify-content: right;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     
     color:black;
@@ -89,6 +90,7 @@ flex: 1;
     justify-content: center;
     flex-direction: column;
     color: black;
+    margin-left: 25px;
     
 }
 .content2{
@@ -103,6 +105,7 @@ flex: 1;
     font-size:15px;
     text-align: center;
     margin-top: 30px;
+    margin-right: 20px;
 }
 .social{
     display: flex;
@@ -338,6 +341,7 @@ button{font-size: 25px;
     justify-content: center;
     align-items: center;
     background-image: url(/UI/assets/background2.jpg);
+    height: 500px;
 }
 .newentry p{
     color: whitesmoke;
@@ -358,6 +362,7 @@ button{font-size: 25px;
   left: 30%;
   text-decoration: none;
   color: #000;
+
 
   
 }
