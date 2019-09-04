@@ -95,6 +95,7 @@ flex: 1;
     justify-content: center;
     flex-direction: column;
     color: black;
+    margin-left: 25px;
     
 }
 .content1{
@@ -112,7 +113,11 @@ flex: 1;
     font-size:15px;
     text-align: center;
     margin-top: 30px;
+<<<<<<< HEAD
     margin-right: 30px;
+=======
+    margin-right: 20px;
+>>>>>>> ft-add-mod-168055308
 }
 .social{
     display: flex;
@@ -350,6 +355,7 @@ button{font-size: 25px;
     align-items: center;
     background-image: url(/UI/assets/background2.jpg);
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 500px;
 
 }
@@ -357,6 +363,9 @@ button{font-size: 25px;
     color: whitesmoke;
 =======
     height: 450px;
+=======
+    height: 500px;
+>>>>>>> ft-add-mod-168055308
 }
 .newentry p{
     color: whitesmoke;
@@ -392,6 +401,7 @@ button{font-size: 25px;
   left: 30%;
   text-decoration: none;
   color: #000;
+
 
   
 }
