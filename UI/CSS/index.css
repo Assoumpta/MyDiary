@@ -368,6 +368,10 @@ button{font-size: 25px;
     font-size: 20px;
     
 }
+<<<<<<< HEAD
+
+.userentry p a{
+=======
 .newentry p a{
     color: black;
     text-decoration: none;
@@ -377,6 +381,7 @@ button{font-size: 25px;
     
 
 /* .userentry p a{ 
+>>>>>>> develop
     display: flex;
     justify-content: center;  
   position: absolute;
