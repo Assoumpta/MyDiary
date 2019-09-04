@@ -14,7 +14,13 @@ body{
     height:90px;;
     width:90px;
     justify-content: flex-start;
+<<<<<<< HEAD
     margin-right: auto; 
+=======
+    align-items: flex-start;
+    margin-right: auto;
+    
+>>>>>>> develop
 }
 
 nav ul{
@@ -121,7 +127,7 @@ flex: 1;
 
 .start{
     border: 8px solid rgb(17, 56, 17);
-    background-color:;
+    
     font-size: 45px;
     color: black;
 
@@ -223,7 +229,7 @@ button{font-size: 25px;
 
 .Aboutus{
     text-align: center;
-    background-color: ; 
+    
 }
 .abouts{
     display: flex;
@@ -260,7 +266,7 @@ button{font-size: 25px;
     width: 350px;
 }
 .view{
-    background-color:;
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
@@ -271,7 +277,7 @@ button{font-size: 25px;
     width: 300px;
 }
 .add{
-    background-color:;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
@@ -343,11 +349,22 @@ button{font-size: 25px;
     justify-content: center;
     align-items: center;
     background-image: url(/UI/assets/background2.jpg);
+<<<<<<< HEAD
     height: 500px;
 
 }
 .newentry p{
     color: whitesmoke;
+=======
+    height: 450px;
+}
+.newentry p{
+    color: whitesmoke;
+    
+}
+
+.newentry p{
+>>>>>>> develop
     font-size: 20px;
     
 }
