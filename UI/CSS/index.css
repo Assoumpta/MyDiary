@@ -14,13 +14,12 @@ body{
     height:90px;;
     width:90px;
     justify-content: flex-start;
-<<<<<<< HEAD
+
     margin-right: auto; 
-=======
+
     align-items: flex-start;
     margin-right: auto;
-    
->>>>>>> develop
+
 }
 
 nav ul{
@@ -113,11 +112,11 @@ flex: 1;
     font-size:15px;
     text-align: center;
     margin-top: 30px;
-<<<<<<< HEAD
+
     margin-right: 30px;
-=======
+
     margin-right: 20px;
->>>>>>> ft-add-mod-168055308
+
 }
 .social{
     display: flex;
@@ -354,18 +353,16 @@ button{font-size: 25px;
     justify-content: center;
     align-items: center;
     background-image: url(/UI/assets/background2.jpg);
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     height: 500px;
 
 }
 .newentry p{
     color: whitesmoke;
-=======
+
     height: 450px;
-=======
     height: 500px;
->>>>>>> ft-add-mod-168055308
+
 }
 .newentry p{
     color: whitesmoke;
@@ -373,14 +370,13 @@ button{font-size: 25px;
 }
 
 .newentry p{
->>>>>>> develop
+
     font-size: 20px;
     
 }
-<<<<<<< HEAD
 
-.userentry p a{
-=======
+
+
 .newentry p a{
     color: black;
     text-decoration: none;
@@ -421,7 +417,7 @@ button{font-size: 25px;
 /*Entry page*/
 
 .entrypage{
-    background-image: url(/UI/assets/background2.jpg);
+    background-image: url(../assets/background2.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -501,7 +497,7 @@ flex: 2;
 }
 
 .allviews{
-    background-image: url(/UI/assets/background2.jpg
+    background-image: url(../assets/background2.jpg
     );
     background-repeat: no-repeat;
     background-size: 100%;
