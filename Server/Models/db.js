@@ -3,7 +3,8 @@ const db= [
     {
       id: 1,
       title: "Entry title",
-      description: "Get the title of entry "
+      description: "Get the title of entry ",
+      
     },
     {
         id: 2,

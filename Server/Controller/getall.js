@@ -7,7 +7,7 @@ const getAll =(req, res) =>{
             error: 'no entries found',
           });
     } else {
-        return res.status(200).send({
+         res.status(200).send({
             status:200,
             data: Models
         })
@@ -16,20 +16,3 @@ const getAll =(req, res) =>{
  //export default getAll;
  module.exports = getAll;
 
-// function getview(){
-//     if (db)({
-//         status:200,
-//        message: 'view retrieved',
-//       view:db,
-//     }));
-    
-//     else{
-//         res.send({
-//             status:404,
-//            message: 'No entry found',
-//           view:db,
-//         });
-
-//     }
-// }
-// export default getview();
