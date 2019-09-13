@@ -9,7 +9,7 @@ const getAll =(req, res) =>{
     } else {
          res.status(200).send({
             status:200,
-            data: Models
+             Models
         })
     }
  }
