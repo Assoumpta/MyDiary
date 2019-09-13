@@ -1,7 +1,7 @@
 import Models from '../Models/db';
 
 
-  const add = function(req, res)  {
+  const addentry = function(req, res)  {
     if(!req.body.title) {
       return res.status(400).send({
         success: 'false',
@@ -15,20 +15,20 @@ import Models from '../Models/db';
     }
     
     
-   const add = {
+   const addentry = {
      id: Models.length + 1,
      title: req.body.title,
      description: req.body.description
    }
-   Models.push(add);
+   Models.push(addentry);
    return res.status(201).send({
      success: 'true',
      message: ' entry added successfully',
-     add
+     addentry
    })
   };
 
-  module.exports=add;
+  module.exports=addentry;
 
 
     
