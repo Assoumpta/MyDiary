@@ -45,3 +45,5 @@ const modifyentry= function(req, res) {
     });
   };
   export default modifyentry;
+ 
+  //export default deleteentry;
