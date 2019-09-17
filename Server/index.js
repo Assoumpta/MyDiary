@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);``
 
 const PORT = 4000;
-app.listen( PORT, function(){
- console.log(`server is running on PORT ${PORT}`)
-});
+app.listen(process.env.PORT || 4000, () =>  console.log(`App listening on PORT 4000`));
+//app.listen( PORT, function(){
+ //console.log(`server is running on PORT ${PORT}`)
+
 
