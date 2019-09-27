@@ -31,8 +31,7 @@
          "prefer-arrow-callback":"off",
          "no-unused-expressions":"off",
          "no-undef":"off",
-         "quotes":"off"
-         
-         
+         "quotes":"off",
+            
     }
 }
