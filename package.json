@@ -4,9 +4,10 @@
   "description": "This challenge 2 is all about using data structure to store data of Mydiary",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"babel Server -d build",
-    "start": "nodemon --exec babel-node./Server/index.js"
+    "test": "mocha --require @babel/register ./test/test.js --exit",
+    "build": "babel Server -d build",
+    "start": "nodemon --exec babel-node ./Server/index.js",
+    "lint": "eslint ./Server || true"
   },
   "repository": {
     "type": "git",
@@ -25,14 +26,16 @@
     "nodemon": "^1.19.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.3.0",
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.6.1",
-    "@babel/preset-env": "^7.6.0"
+    "@babel/preset-env": "^7.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0"
   }
 }
