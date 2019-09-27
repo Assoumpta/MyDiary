@@ -1,5 +1,5 @@
 
-const db= [
+const db = [
     {
       id: 1,
       title: "Entry title",
@@ -9,16 +9,12 @@ const db= [
     {
         id: 2,
         title: "Entry message",
-        description: "Get the message of entry "
+        description: "Get the message of entry ",
       },
       {
         id: 3,
         title: "Published date",
-        description: "Published date of the entry"
-      }
+        description: "Published date of the entry",
+      },
 ];
-// express.Router().get('/',function(req,res){
-//     res.status(200).json(view);
-// });
-//export default db;
 module.exports = db;

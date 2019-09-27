@@ -1,15 +1,15 @@
 import Models from '../Models/db';
 
-const modifyentry= function(req, res) {
+const modifyentry = function (req, res) {
     const id = parseInt(req.params.id, 10);
     let EntryFound;
     let item;
-    Models.map((db, index) => {
+    Models.map = (db, index) => {
       if (db.id === id) {
         EntryFound = db;
         item = index;
       }
-    });
+    };
   
     if (!EntryFound) {
       return res.status(404).send({
@@ -45,5 +45,3 @@ const modifyentry= function(req, res) {
     });
   };
   export default modifyentry;
- 
-  //export default deleteentry;

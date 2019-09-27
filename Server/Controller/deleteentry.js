@@ -1,6 +1,6 @@
 import Models from '../Models/db';
 
-const deleteentry= function(req, res)  {
+const deleteentry = function (req, res){
     const id = parseInt(req.params.id, 10);
   
     Models.map((db, index) => {
@@ -11,15 +11,11 @@ const deleteentry= function(req, res)  {
            message: 'Entry  deleted successfuly',
          });
       }
-    });
+    
   
-  
-      return res.status(404).send({
-        success: 'false',
-        message: 'entry does not  exist',
-      });
-  
-   
+  else {
+    return res.status(404);
+  }
+});
   };
- 
-  module.exports=deleteentry;
+ module.exports = deleteentry;
