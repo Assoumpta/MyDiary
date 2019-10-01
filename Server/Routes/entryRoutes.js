@@ -1,8 +1,4 @@
 import express from 'express';
-<<<<<<< HEAD
-
-=======
->>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
 import getallentriesl from '../Controller/getallentriesl';
 import specificentry from '../Controller/getspecificentry';
 import addentry from '../Controller/addentry';

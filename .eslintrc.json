@@ -31,12 +31,9 @@
          "prefer-arrow-callback":"off",
          "no-unused-expressions":"off",
          "no-undef":"off",
-         "quotes":"off",
-<<<<<<< HEAD
+         "quotes":"off", 
          "array-callback-return":"off",
-         "import/no-extraneous-dependencies":"off"
-=======
->>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
-            
+         "import/no-extraneous-dependencies":"off",
+         "import/no-unresolved":"off"
     }
 }
