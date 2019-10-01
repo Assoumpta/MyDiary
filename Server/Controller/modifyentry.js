@@ -1,6 +1,6 @@
 import Models from '../Models/db';
 
-const modifyentry= function(req, res) {
+const modifyentry = function (req, res) {
     const id = parseInt(req.params.id, 10);
     let EntryFound;
     let item;
@@ -45,5 +45,3 @@ const modifyentry= function(req, res) {
     });
   };
   export default modifyentry;
- 
-  //export default deleteentry;

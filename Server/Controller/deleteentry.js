@@ -1,6 +1,6 @@
 import Models from '../Models/db';
 
-const deleteentry= function(req, res)  {
+const deleteentry = function (req, res) {
     const id = parseInt(req.params.id, 10);
   
     Models.map((db, index) => {
@@ -22,4 +22,4 @@ const deleteentry= function(req, res)  {
    
   };
  
-  module.exports=deleteentry;
+  module.exports = deleteentry;
