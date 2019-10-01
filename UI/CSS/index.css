@@ -7,7 +7,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
      height: 100vh; 
-     width: 100vw;
+     width: 100;
 }
 
 /*Navigation bar*/
@@ -18,6 +18,7 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     margin-right: auto;
+
     
 }
 
@@ -61,7 +62,7 @@ nav{
 }
 
 nav li a:hover{
-    background-color: rgba(233, 0, 0, 0);
+    background-color: black;
     transition:10s;
 }
 .main-content{
@@ -71,15 +72,24 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
     font-family: 'Dancing Script', cursive;
-
     color:black;
     font-size: 25px;
+
+}
+.main-content a {
+    color:black;
+    font-size:35px;
+    text-decoration:none;
+    background-color: gray;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .articles{
     display:flex;
     flex-wrap: wrap;
     background-color:#A3CAC9;
     color:black;
+   padding:15px;
+   
     
 
 }
@@ -118,14 +128,9 @@ flex: 1;
 
 
 .start{
-    border: 8px solid rgb(17, 56, 17);
-    
     font-size: 45px;
     color: black;
 
-}
-.start p a{
-color: black;
 }
 
 button{font-size: 25px;
@@ -136,20 +141,22 @@ button{font-size: 25px;
 .loginform {
     width:400px;
     height:auto;
-    background:linear-gradient(#00000038,#000);
+    background:linear-gradient(#00000008,#000);
     font:  sans-serif;
     padding: 30px 20px;
     box-sizing: border-box;
     text-align: center;
 /*margin: 10px 10px 10px 400px;*/
- border: 8px solid cadetblue;
+ border: 5px solid cadetblue;
  margin: 0 auto;
+ border-radius:10px;
 
 }
 .loginform img{
     height: 50%;
     width: 50%;
     margin-bottom: 20px;
+    border-radius:90px;
 
 }
 .loginform h2{
@@ -171,15 +178,19 @@ button{font-size: 25px;
 
 }
 .accountnew{
-    font-size: 23px;
+    font-size: 20px;
+    color:black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.accountnew a{
+    color:cadetblue;
 }
 
 
 /*Signup form*/
 
 .signupform{
-    background: linear-gradient(#00000038,#000);
+    background: linear-gradient(#00000008,#000);
     padding: 20px 30px;
     width:400px;
     height:auto;
@@ -197,7 +208,14 @@ button{font-size: 25px;
     cursor: pointer;
 }
 .signupform h2{
-    color: aliceblue;
+    color:black;
+    margin-bottom: 20px;
+    font-size:35px;
+}
+.signupform img{
+    border-radius:90px;
+    height: 50%;
+    width: 50%;
     margin-bottom: 20px;
 }
 
@@ -207,16 +225,17 @@ button{font-size: 25px;
     height: 40px;
     margin-bottom: 20px;
 }
-.signupform img{
-    height: 50%;
-    width: 50%;
-    margin-bottom: 20px;
-
+.signupform input ::placeholder{
+    text-align:center;
 }
 .option-login{
     color: blue;
+    font-size:20px;
 }
-
+.option-login a{
+    font-size:25px;
+    Color:cadetblue;
+}
 /*About us page*/
 
 .Aboutus{
@@ -229,7 +248,7 @@ button{font-size: 25px;
     background-color: antiquewhite;
     font-size: 20px;
     text-emphasis: size after 2px;
-    width: 100vw;
+    width: 100%;
      
 }
 .aboutback{
@@ -303,21 +322,26 @@ button{font-size: 25px;
 .journal .journal-list {
     position: fixed;
     width: 200px;
-    height: 65%;
+    height: 75%;
     background: cadetblue;
     padding: 30px 0;
     text-decoration: none;
     list-style: none;
+    
 }
 .journal .journal-list ul li{
     padding: 15px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    /* border-bottom: 1px solid black; */
+     border-bottom: 1px solid black; 
+    font-weight:bold;
+
 }
+
 .journal .journal-list ul li a{
     color: black;
     text-decoration: none;
     list-style: none;
+
 }
 .journal .journal-list  li a:hover{
     background: wheat;
@@ -330,29 +354,30 @@ button{font-size: 25px;
 /*New Entries*/
 
 .newentry h1{
-    text-align: center;
-    
+    text-align: center; 
     width: 100%;
     height: 80px;
     font-size: 25px;
+    /* margin-top:30px; */
+}
+.newentry img{
+    height:250px;
+    width: 40%;
+    /* justify-content:center;
+    align-items:center; */
+    margin-left:280px;
 }
 .newentry{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url(../assets/background2.jpg);
     height: 100vh;
+    position:fixed;
+    margin-left:220px; 
+    width:80%;
     
 }
-.newentry p{
-    color: whitesmoke;
-    
-}
-.newentry p{
-    font-size: 20px;
-    
-}
+
 .userentry p a{
     display: flex;
     justify-content: center;  
@@ -386,21 +411,29 @@ button{font-size: 25px;
     height: 100%;
     position: fixed;
     width: 100%;
+    margin-left:200px;
 }
 
 .entrypage{
     background-image: url(../assets/background2.jpg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-      
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;  
+    width:100%;
 }
-.entryq{
-    left: 250px;
-    top: 200px;
+.entrypage {
+    
+        font-family: arial, sans-serif;
+        /* border-collapse: collapse; */
+        width: 100%;
+        margin-left:200px;
+     position:fixed;
+     
 }
+
+
 .entrytitle{
     width: 50%;
     position: relative;
@@ -443,7 +476,7 @@ button{font-size: 25px;
     width: 100%;
     height: 100%;
     
-}
+} 
 .message{
     top: 100px;
     width: 80%;
@@ -454,7 +487,8 @@ button{font-size: 25px;
   color: black;
     background: cadetblue;
     left: 50%;
-
+    height:50px;
+    
 }
 /*View entries*/
 .views{
@@ -476,11 +510,26 @@ flex: 2;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
-    width: 100%;
+    width: 90%;
+    margin-left:230px;
+    position:fixed;
     
 }
-.cancel{
-    color: burlywood;
-    text-align: center;
+.allviews table{
+    margin-left:200px;
 }
+table td ,th{
+    border-left: 1px solid cadetblue; 
+    color:antiquewhite;
+    border-bottom:1px solid cadetblue;
+}
+table td{
+    padding:40px; 
+}
+table th{
+ border-bottom:1px solid cadetblue;
+ font-size:25px;
+ color:black;
+}
+
 
