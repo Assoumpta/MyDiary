@@ -1,6 +1,10 @@
 import Models from '../Models/db';
 
+<<<<<<< HEAD
 const deleteentry = function (req, res) {
+=======
+const deleteentry = function (req, res){
+>>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
     const id = parseInt(req.params.id, 10);
   
     Models.map((db, index) => {
@@ -11,15 +15,16 @@ const deleteentry = function (req, res) {
            message: 'Entry  deleted successfuly',
          });
       }
-    });
+    
   
-  
-      return res.status(404).send({
-        success: 'false',
-        message: 'entry does not  exist',
-      });
-  
-   
+  else {
+    return res.status(404);
+  }
+});
   };
+<<<<<<< HEAD
  
   module.exports = deleteentry;
+=======
+ module.exports = deleteentry;
+>>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
