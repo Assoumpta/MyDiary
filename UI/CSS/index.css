@@ -238,9 +238,9 @@ button{font-size: 25px;
 }
 /*About us page*/
 
-.Aboutus{
-    text-align: center;
-    
+.aboutus{
+    text-align: center; 
+   
 }
 .abouts{
     display: flex;
@@ -418,21 +418,19 @@ button{font-size: 25px;
     background-image: url(../assets/background2.jpg);
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     height: 100vh;  
-    width:100%;
-}
-.entrypage {
-    
-        font-family: arial, sans-serif;
-        /* border-collapse: collapse; */
-        width: 100%;
-        margin-left:200px;
-     position:fixed;
-     
+    width:100vw;
+    font-family: arial, sans-serif;
+    position:fixed;
+    margin-left:200px;  
 }
 
+.entrypage p{
+      margin-top:380px;
+      font-size:25px;
+      margin-left:160px;
+      font-weight:bold;
+}
 
 .entrytitle{
     width: 50%;
@@ -485,9 +483,9 @@ button{font-size: 25px;
 
 .savebutton{
   color: black;
-    background: cadetblue;
-    left: 50%;
-    height:50px;
+     background: cadetblue; 
+    height:40px;
+    width:10%;
     
 }
 /*View entries*/
@@ -496,40 +494,66 @@ button{font-size: 25px;
     flex-wrap: wrap;
     font-size: 20px;
     text-emphasis: size after 2px;
-    width: 100%;
-     
+    width: 95%;
+    
+}
+.viewer{
+flex:2;
 
 }
-.view{
-flex: 2;
+.viewer h1{
+    font-size:20px;
+}
+.viewer{
+    border:3px solid black;
+}
+.views date{
+    color:cadetblue;
 }
 
 .allviews{
     background-image: url(../assets/background2.jpg
     );
     background-repeat: no-repeat;
+    background-size: 95%;
+    height: 100vh;
+    width: 85%;
+    margin-left:230px;
+    color:gainsboro;
+}
+.allviews h2{
+    text-align:center;
+    margin-top:150px;
+}
+.allviews a{
+    margin-left:500px;
+
+}
+           /* Modify entries */
+.modify{
+    background-image: url(../assets/background2.jpg
+    );
+    background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
-    width: 90%;
-    margin-left:230px;
-    position:fixed;
-    
-}
-.allviews table{
+    width: 85%;
     margin-left:200px;
-}
-table td ,th{
-    border-left: 1px solid cadetblue; 
-    color:antiquewhite;
-    border-bottom:1px solid cadetblue;
-}
-table td{
-    padding:40px; 
-}
-table th{
- border-bottom:1px solid cadetblue;
- font-size:25px;
- color:black;
-}
+    position:fixed;
 
-
+}
+ 
+.search input[type="text"]{
+    height: 50px;
+    width:50%;
+    margin-top:50px;
+    margin-left:150px;
+    color: black;
+   
+    border-radius:5px;
+    font-size:20px;
+}
+.search button{
+    border-radius:3px;
+    width:10%;
+    cursor: pointer;
+}
