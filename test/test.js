@@ -104,12 +104,12 @@ describe('User should get all entries', () => {
               
               chai
                 .request(app)
-                .post('/api/v1/entries/:id')
+                .put('/api/v1/entries/:id')
                  
                 .end(function (err, res) {
                   
-                  expect(res).to.have.status(404);
-                  expect(res.status).to.equals(404);
+                  expect(res).to.have.status(400);
+                  expect(res.status).to.equals(400);
                   expect(res.body).to.be.an('object');
                   expect(res.body.title).not.to.be.null;
                   expect(res.body.description).not.to.be.null;
