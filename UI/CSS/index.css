@@ -139,14 +139,14 @@ button{font-size: 25px;
      /*Loginform*/
 
 .loginform {
-    width:400px;
+    width:350px;
     height:auto;
     background:linear-gradient(#00000008,#000);
     font:  sans-serif;
     padding: 30px 20px;
     box-sizing: border-box;
     text-align: center;
-/*margin: 10px 10px 10px 400px;*/
+
  border: 5px solid cadetblue;
  margin: 0 auto;
  border-radius:10px;
@@ -165,17 +165,22 @@ button{font-size: 25px;
 }
 
 .loginform input{
-    width: 100%;
+    width: 75%;
     border-radius: 10px;
     height: 40px;
     margin-bottom: 20px;
 }
-.loginform input[type="button"]{
-    height: 50px;
+.butt button{
+    height: 30px;
     background-color: cadetblue;
-    color: black;
     cursor: pointer;
+    width:45%;
+    border-radius:4px;
 
+}
+button a{
+    text-decoration:none;
+    color: black;
 }
 .accountnew{
     font-size: 20px;
@@ -191,8 +196,8 @@ button{font-size: 25px;
 
 .signupform{
     background: linear-gradient(#00000008,#000);
-    padding: 20px 30px;
-    width:400px;
+    padding: 30px 30px;
+    width:380px;
     height:auto;
     box-sizing: border-box;
     text-align: center;
@@ -201,11 +206,17 @@ button{font-size: 25px;
  margin: 0 auto;
 
 }
-.signupform input[type="button"]{
-    height: 50px;
+.signupform button{
+    height: 45px;
     background-color: cadetblue;
-    color: black;
     cursor: pointer;
+    width:55%;
+    border-radius:6px;
+}
+button a{
+    color: black;
+    /* font-size:25px; */
+
 }
 .signupform h2{
     color:black;
