@@ -1,18 +1,11 @@
 import Models from '../Models/db';
+import entryvalidation from '../validation/validation';
 
 const addentry = (req, res) => {
-      if (!req.body.title) {
-         return res.status(400).send({
-          success: 'false',
-          description: 'title is required',
-        });
- } 
-else if (!req.body.description) {
-      return res.status(400).send({
-        success: 'false',
-        description: 'message is required',
-});
-}
+  const { error } = entryvalidation.validate(req.body);
+  if (error) {
+   return res.status(400).json({ status: 400, error: error.details[0].message });
+  }
    const addentry = {
      id: Models.length + 1,
      title: req.body.title,

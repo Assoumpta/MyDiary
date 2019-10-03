@@ -4,10 +4,11 @@
   "description": "This challenge 2 is all about using data structure to store data of Mydiary",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/register ./test/test.js --exit",
+    "test": "nyc --reporter=html --reporter=text mocha --require @babel/register ./test/test.js --exit",
     "build": "babel Server -d build",
     "start": "nodemon --exec babel-node ./Server/index.js",
-    "lint": "eslint ./Server || true"
+    "lint": "eslint ./Server || true",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "joi": "^14.3.1",
     "nodemon": "^1.19.2"
   },
   "devDependencies": {
@@ -33,9 +35,11 @@
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
+    "coveralls": "^3.0.6",
     "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
   }
 }
