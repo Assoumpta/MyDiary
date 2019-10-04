@@ -1,13 +1,13 @@
 import joi from 'joi';
 
 const entryvalidation = {
-    validate(addentry) {
+    validate(schema) {
         const newentry= {
-            //user_id : Joi.number().integer().required(),
-            title: joi.string().required(),
-        description: joi.string().required(),
+          
+            title: joi.string().trim().required(),
+        description: joi.string().trim().required(),
         };
-        return joi.validate(addentry, newentry);
+        return joi.validate(schema, newentry);
     },
    };
    export default entryvalidation;
