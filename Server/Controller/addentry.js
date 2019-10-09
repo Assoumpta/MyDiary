@@ -1,6 +1,6 @@
 import Models from '../Models/db';
+import entryvalidation from '../validation/validation';
 
-<<<<<<< HEAD
 
   const addentry = function (req, res) {
     if (!req.body.title) {
@@ -14,10 +14,7 @@ import Models from '../Models/db';
         description: 'message is required',
       });
     }
-    
-    
-=======
-const addentry = (req, res) => {
+  ddentry = (req, res) => {
       if (!req.body.title) {
          return res.status(400).send({
           success: 'false',
@@ -31,6 +28,12 @@ else if (!req.body.description) {
 });
 }
 >>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
+=======
+  const { error } = entryvalidation.validate(req.body);
+  if (error) {
+   return res.status(400).json({ status: 400, error: error.details[0].message });
+  }
+>>>>>>> 3282f2463d44845a641da385708efb10f6a5766b
    const addentry = {
      id: Models.length + 1,
      title: req.body.title,
@@ -52,4 +55,8 @@ else if (!req.body.description) {
      });
   };
 module.exports = addentry;
+<<<<<<< HEAD
 >>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
+=======
+
+>>>>>>> 3282f2463d44845a641da385708efb10f6a5766b
