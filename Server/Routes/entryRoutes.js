@@ -12,7 +12,7 @@ const router = express.Router();
 router.get('/api/v1/entries', getallentriesl);  
 router.get('/api/v1/entries/:id', specificentry);
  router.post('/api/v1/entries/', validator.validateString, addentry);
-router.post('/api/v1/entries/', addentry);
+ router.post('/api/v1/entries/',validator.validateSpace, addentry);
 router.put('/api/v1/entries/:id', modifyentry);
 router.delete('/api/v1/entries/:id', deleteentry);
 
