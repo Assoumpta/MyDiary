@@ -23,10 +23,7 @@ if (error) {
         message: 'ID of entry is not found',
       });
     }
-  
-   
-  
-    const modifyentry = {
+const modifyentry = {
       id: EntryFound.id,
       title: req.body.title || EntryFound.title,
       description: req.body.description || EntryFound.description,

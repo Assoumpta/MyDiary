@@ -31,6 +31,8 @@
          "prefer-arrow-callback":"off",
          "no-unused-expressions":"off",
          "no-undef":"off",
+        " no-multiple-empty-lines":"off",
+        "no-console":"off",
          "quotes":"off", 
          "array-callback-return":"off",
          "import/no-extraneous-dependencies":"off",
