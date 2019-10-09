@@ -31,9 +31,13 @@
          "prefer-arrow-callback":"off",
          "no-unused-expressions":"off",
          "no-undef":"off",
-         "quotes":"off",
         " no-multiple-empty-lines":"off",
-        "no-console":"off"
-            
+        "no-console":"off",
+         "quotes":"off", 
+         "array-callback-return":"off",
+         "import/no-extraneous-dependencies":"off",
+         "import/no-unresolved":"off",
+         "import/no-named-as-default":"off",
+         "import/no-named-as-default-member":"off"
     }
 }
