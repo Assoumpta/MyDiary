@@ -19,3 +19,4 @@ const addentry = (req, res) => {
      });
   };
 module.exports = addentry;
+
