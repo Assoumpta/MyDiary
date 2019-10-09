@@ -9,6 +9,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);
 
 const PORT = process.env.PORT || 2000;
-app.listen(PORT, () => {console.log (`App listening on PORT ${PORT}`); });
+app.listen(PORT, () => { console.log(`App listening on PORT ${PORT}`); });
 
 export default app;
