@@ -8,17 +8,9 @@ const getAll = (req, res) => {
           });
     } else {
          res.status(200).send({
-<<<<<<< HEAD
             status: 200,
-=======
-        status: 200,
->>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
              Models,
         });
     }
  };
-<<<<<<< HEAD
- 
-=======
->>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
  module.exports = getAll;
