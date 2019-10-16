@@ -1,6 +1,6 @@
 import express from 'express';
-
-import router from '../Routes/entryRoutes';
+import bodyParser from 'body-parser';
+import router from './Routes/entryRoutes';
 
 const app = express();
 app.use(bodyParser.json());
