@@ -16,4 +16,4 @@ router.get('/api/v1/entries/:id', specificentry);
 router.put('/api/v1/entries/:id', modifyentry);
 router.delete('/api/v1/entries/:id', deleteentry);
 
-module.exports = router;
+export default router;

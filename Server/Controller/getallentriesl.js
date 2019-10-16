@@ -9,10 +9,8 @@ const getAll = (req, res) => {
     } else {
          res.status(200).send({
             status: 200,
-
              Models,
         });
     }
  };
- 
  module.exports = getAll;
