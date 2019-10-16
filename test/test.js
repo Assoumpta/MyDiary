@@ -21,17 +21,9 @@ describe('User should get all entries', () => {
           done();
         });
       });
-    it('GET /Users should get error when it does not  give all entries', function (done){
-      chai
-      .request(app)
-      .get('/')
-      .end(function (err, res){
-        expect(res).to.have.status(404);
-         expect(res.status).to.equals(404);
-        done();
-      });
+   
     });
-  });
+
 
   describe('User should get specific entry by Id', () => {
     it('GET /User should get specific entry by Id', function (done) {

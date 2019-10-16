@@ -17,11 +17,5 @@ const db = [
         description: "Published date of the entry",
       },
 ];
-<<<<<<< HEAD
-// express.Router().get('/',function(req,res){
-//     res.status(200).json(view);
-// });
 
-=======
->>>>>>> d2e6fffdbf85e18424c44bf620aee8cca85489a4
 module.exports = db;
