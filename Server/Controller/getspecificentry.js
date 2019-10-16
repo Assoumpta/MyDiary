@@ -22,6 +22,7 @@ pool.connect((err, user, done) => {
         message: 'Entry for this id is  Succsesfully retrieved',
         entries: result.rows,
       });
+
     }
   });
 });

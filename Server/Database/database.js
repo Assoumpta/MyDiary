@@ -1,13 +1,18 @@
+
 import { Pool } from 'pg';
 
 const done = {
+
+
   user: 'postgres', 
   database: 'Mydiary',
   password: '123',
   port: 5432,
+
 };
 
 const pool = new Pool(done);
+
 
 pool.on('connect', () => {
   console.log('It is connected to the Database');
@@ -44,3 +49,4 @@ const createTables = () => {
        
       
       require('make-runnable');
+

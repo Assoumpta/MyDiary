@@ -2,6 +2,7 @@
 import { pool } from '../Database/database';
 
 const getAll = (req, res) => {
+
     pool.connect((err, user, done) => {
         const query = 'SELECT * FROM allentries';
         user.query(query, (error, result) => {

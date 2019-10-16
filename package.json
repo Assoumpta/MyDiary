@@ -9,7 +9,9 @@
     "start": "nodemon --exec babel-node ./Server/index.js",
     "lint": "eslint ./Server || true",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+
     "create": "babel-node ./Server/Database/database createTables"
+
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "mocha": "^6.2.0",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "nodemon": "^1.19.2"
   }
 }
