@@ -1,48 +1,52 @@
-import pg from 'pg';
 
-const config = {
+import { Pool } from 'pg';
+
+const done = {
+
+
   user: 'postgres', 
   database: 'Mydiary',
   password: '123',
   port: 5432,
-  max: 10, 
-  idleTimeoutMillis: 30000,
+
 };
 
-const pool = new pg.Pool(config);
+const pool = new Pool(done);
+
 
 pool.on('connect', () => {
   console.log('It is connected to the Database');
 });
 
 const createTables = () => {
-    const schoolTable = `CREATE TABLE IF NOT EXISTS
-        Entries(
-          id INTEGER PRIMARY KEY,
-        Entry_title VARCHAR(128) NOT NULL,
-        Entry_message VARCHAR NOT NULL
+    const entryTable = `CREATE TABLE IF NOT EXISTS
+        allentries(
+        id SERIAL PRIMARY KEY,
+        entry_title VARCHAR(12) NOT NULL,
+        entry_message VARCHAR(20) NOT NULL
+        )`;
+
+        const signuptable = `CREATE TABLE IF NOT EXISTS
+        signuptable(
+          email VARCHAR(140) NOT NULL,
+          username VARCHAR(120) NOT NULL,
+          password VARCHAR(100) NOT NULL
           
         )`;
-    pool.query(schoolTable)
-      .then((res) => {
-        console.log(res);
-        pool.end();
-      })
-      .catch((err) => {
-        console.log(err);
-        pool.end();
-      });
-  };
+        const query = `${entryTable};${signuptable}`;
+  
+   pool.query(query).then((res) => {
+           console.log(res);
+           pool.end();
+       })
+          .catch((err) => {
+            console.log(err);
+            pool.end();
+          });
+      };
+     
+      export { createTables, pool };
+       
+      
+      require('make-runnable');
 
-  pool.on('remove', () => {
-    console.log('client removed');
-    process.exit(0);
-  });
-  
-  
-  module.exports = {
-    createTables,
-    pool,
-  };
-  
-  require('make-runnable');

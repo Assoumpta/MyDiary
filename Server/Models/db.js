@@ -17,4 +17,5 @@ const db = [
         description: "Published date of the entry",
       },
 ];
+
 module.exports = db;

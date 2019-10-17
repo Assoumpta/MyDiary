@@ -1,4 +1,5 @@
-import Models from '../Models/db';
+
+import { pool } from '../Database/database';
 import entryvalidation from '../validation/validation';
 
 
@@ -7,19 +8,26 @@ const addentry = (req, res) => {
   if (error) {
    return res.status(400).json({ status: 400, error: error.details[0].message });
   }
-
-   const addentry = {
-     id: Models.length + 1,
-     title: req.body.title,
-     description: req.body.description,
-   };
-   Models.push(addentry);
-   return res.status(201).send({
-     success: 'true',
-
-     message: ' entry added successfully',
-     addentry,
-   });
+  const data = {
+   entry_title: req.body.title,
+   entry_message: req.body.description,
   };
 
-  module.exports = addentry;
+  pool.connect((err, user, done) => {
+    const query = 'INSERT INTO allentries(entry_title, entry_message) VALUES($1,$2) RETURNING *';
+    const values = [data.entry_title, data.entry_message];
+
+    user.query(query, values, (error, result) => {
+      done();
+      if (error) {
+        res.status(400).json({ error });
+      }
+      res.status(202).send({
+        status: 'SUccessful',
+        result: result.rows[0],
+      });
+    });
+  });
+ 
+};
+  export default addentry;

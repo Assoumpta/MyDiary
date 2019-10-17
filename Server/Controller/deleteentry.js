@@ -1,5 +1,6 @@
 import Models from '../Models/db';
 
+
 const deleteentry = function (req, res){
 
     const id = parseInt(req.params.id, 10);
